@@ -19,4 +19,4 @@ test('AddUser renders properly', () => {
 test('AddUser renders a snapshot properly', () => {
     const tree = renderer.create(<AddUser/>).toJSON();
     expect(tree).toMatchSnapshot();
-})
+});
