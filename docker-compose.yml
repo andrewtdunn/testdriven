@@ -16,10 +16,10 @@ services:
       - DATABASE_URL=postgres://postgres:postgres@users-db:5432/users_dev  # new
       - DATABASE_TEST_URL=postgres://postgres:postgres@users-db:5432/users_test  # new
       - SECRET_KEY=my_precious
-    depends_on:  # new
+    depends_on:
       - users-db
 
-  users-db:  # new
+  users-db:
     build:
       context: ./services/users/project/db
       dockerfile: Dockerfile
