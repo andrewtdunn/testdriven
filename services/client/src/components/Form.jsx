@@ -1,6 +1,10 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 const Form = (props) => {
+    if (props.isAuthenticated) {
+        return <Redirect to='/'/>
+    }
     return (
         <div>
             {props.formType === 'Login' &&
@@ -10,6 +14,7 @@ const Form = (props) => {
                 <h1 className="title is-1">Register</h1>
             }
             <hr/><br/>
+
             <form onSubmit={(event) => props.handleUserFormSubmit(event)}>
                 {props.formType === 'Register' &&
                     <div className="field">
