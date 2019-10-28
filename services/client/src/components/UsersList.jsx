@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const UserList = (props) => {
+const UsersList = (props) => {
     return (
         <div>
             <h1 className="title is-1">All Users</h1>
@@ -36,4 +36,4 @@ const UserList = (props) => {
     )
 };
 
-export default UserList;
+export default UsersList;

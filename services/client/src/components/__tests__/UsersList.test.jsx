@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount, render, configure} from 'enzyme';
 import renderer from 'react-test-renderer';
-import UsersList from '../Userslist';
+import UsersList from '../UsersList';
 
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
