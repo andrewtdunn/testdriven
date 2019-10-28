@@ -3,24 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b0e7f609-af96-41b7-88c0-e93b87459bdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/Dockerfile-prod" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/Dockerfile-prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/components/UsersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/UsersList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/components/__tests__/UserList.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/UserList.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/components/__tests__/__snapshots__/NavBar.test.jsx.snap" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/__snapshots__/NavBar.test.jsx.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/components/__tests__/__snapshots__/UserList.test.jsx.snap" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/__snapshots__/UserList.test.jsx.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/Dockerfile-prod" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/Dockerfile-prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/api/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/api/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users/project/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/api/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/api/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users/project/tests/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/tests/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users/project/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/tests/test_auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/tests/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/tests/test_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/tests/test_user_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/tests/test_user_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/tests/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/tests/test_users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users/project/tests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/tests/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,12 +17,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/client/src/components/__tests__/UserList.test.jsx">
+        <entry file="file://$PROJECT_DIR$/services/users/project/tests/test_auth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+            <state relative-caret-position="488">
+              <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/users/project/tests/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#41#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,6 +59,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/users/project/api/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+              <folding>
+                <element signature="e#40#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/nginx/dev.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
@@ -70,7 +79,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/users/project/tests/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#41#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/client/conf/conf.d/default.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -79,20 +100,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose-prod.yml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/users/project/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/users/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="528">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,27 +117,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/client/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/client/src/components/UserStatus.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -179,17 +173,13 @@
         <option value="$PROJECT_DIR$/services/client/src/components/__tests__/Form.test.jsx" />
         <option value="$PROJECT_DIR$/services/client/src/components/NavBar.jsx" />
         <option value="$PROJECT_DIR$/services/users/project/config.py" />
-        <option value="$PROJECT_DIR$/services/users/project/tests/base.py" />
         <option value="$PROJECT_DIR$/services/users/project/tests/test_config.py" />
         <option value="$PROJECT_DIR$/services/users/project/api/auth.py" />
         <option value="$PROJECT_DIR$/services/users/project/tests/test_user_model.py" />
         <option value="$PROJECT_DIR$/services/users/migrations/versions/e73721d4d88f_.py" />
         <option value="$PROJECT_DIR$/services/users/project/api/utils.py" />
         <option value="$PROJECT_DIR$/services/users/project/api/users.py" />
-        <option value="$PROJECT_DIR$/services/users/project/api/models.py" />
-        <option value="$PROJECT_DIR$/services/users/project/tests/utils.py" />
         <option value="$PROJECT_DIR$/services/users/project/tests/test_users.py" />
-        <option value="$PROJECT_DIR$/services/users/project/tests/test_auth.py" />
         <option value="$PROJECT_DIR$/services/client/src/App.jsx" />
         <option value="$PROJECT_DIR$/services/client/src/components/UsersList.jsx" />
         <option value="$PROJECT_DIR$/services/client/src/components/UserStatus.jsx" />
@@ -198,6 +188,10 @@
         <option value="$PROJECT_DIR$/docker-compose-prod.yml" />
         <option value="$PROJECT_DIR$/services/client/Dockerfile-prod" />
         <option value="$PROJECT_DIR$/services/client/conf/conf.d/default.conf" />
+        <option value="$PROJECT_DIR$/services/users/project/api/models.py" />
+        <option value="$PROJECT_DIR$/services/users/project/tests/utils.py" />
+        <option value="$PROJECT_DIR$/services/users/project/tests/test_auth.py" />
+        <option value="$PROJECT_DIR$/services/users/project/tests/base.py" />
       </list>
     </option>
   </component>
@@ -230,34 +224,30 @@
               <item name="testdriven-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="testdriven-app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testdriven-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testdriven-app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testdriven-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testdriven-app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="conf.d" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testdriven-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testdriven-app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testdriven-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="testdriven-app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testdriven-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testdriven-app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testdriven-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testdriven-app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,12 +305,12 @@
       <workItem from="1571676477467" duration="340000" />
       <workItem from="1571978873643" duration="5368000" />
       <workItem from="1572013622211" duration="30776000" />
-      <workItem from="1572204787449" duration="19925000" />
+      <workItem from="1572204787449" duration="20783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200191000" />
+    <option name="totallyTimeSpent" value="201049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1182" y="23" width="1241" height="1313" extended-state="0" />
@@ -558,16 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/users/project/tests/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#41#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/users/project/tests/test_config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-641">
@@ -626,26 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/users/project/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/users/project/api/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/users/project/tests/test_users.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1520">
@@ -658,23 +618,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/users/migrations/versions/c86981dcfe19_.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/users/project/tests/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/users/project/tests/test_auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3180">
-          <caret line="159" column="25" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/users/project/tests/test_user_model.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -786,6 +729,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/users/project/api/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+          <folding>
+            <element signature="e#40#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/users/project/tests/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/users/project/tests/test_auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/users/project/tests/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#41#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/users/project/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

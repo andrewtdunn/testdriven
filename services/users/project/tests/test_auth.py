@@ -279,5 +279,6 @@ class TestAuthBlueprint(BaseTestCase):
             self.assertTrue(data['message'] == 'Provide a valid auth token.')
             self.assertEqual(response.status_code, 401)
 
+
 if __name__ == 'main':
     unittest.main()

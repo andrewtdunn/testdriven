@@ -12,6 +12,7 @@ def add_user(username, email, password, admin=False):
     db.session.commit()
     return user
 
+
 def get_auth_token(client):
     resp_login = client.post(
         '/auth/login',
