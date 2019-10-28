@@ -1,3 +1,6 @@
+# services/users/project/tests/test_config.py
+
+
 import os
 import unittest
 
@@ -5,6 +8,7 @@ from flask import current_app
 from flask_testing import TestCase
 
 from project import create_app
+
 
 app = create_app()
 
@@ -15,12 +19,13 @@ class TestDevelopmentConfig(TestCase):
         return app
 
     def test_app_is_development(self):
-        self.assertTrue(app.config['SECRET_KEY'] == 'my_precious')
+        self.assertEqual(
+            app.config['SECRET_KEY'], os.environ.get('SECRET_KEY')
+        )
         self.assertFalse(current_app is None)
         self.assertTrue(
-            app.config[
-                'SQLALCHEMY_DATABASE_URI'
-            ] == os.environ.get('DATABASE_URL')
+            app.config['SQLALCHEMY_DATABASE_URI'] ==
+            os.environ.get('DATABASE_URL')
         )
         self.assertTrue(app.config['DEBUG_TB_ENABLED'])
         self.assertTrue(app.config['BCRYPT_LOG_ROUNDS'] == 4)
@@ -38,13 +43,10 @@ class TestTestingConfig(TestCase):
             app.config['SECRET_KEY'], os.environ.get('SECRET_KEY')
         )
         self.assertTrue(app.config['TESTING'])
-        self.assertFalse(app.config[
-                             'PRESERVE_CONTEXT_ON_EXCEPTION'
-                         ])
+        self.assertFalse(app.config['PRESERVE_CONTEXT_ON_EXCEPTION'])
         self.assertTrue(
-            app.config[
-                'SQLALCHEMY_DATABASE_URI'
-            ] == os.environ.get('DATABASE_TEST_URL')
+            app.config['SQLALCHEMY_DATABASE_URI'] ==
+            os.environ.get('DATABASE_TEST_URL')
         )
         self.assertFalse(app.config['DEBUG_TB_ENABLED'])
         self.assertTrue(app.config['BCRYPT_LOG_ROUNDS'] == 4)

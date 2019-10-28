@@ -29,9 +29,15 @@ const NavBar = (props) => (
                     <Link to="/status" className="navbar-item">User Status</Link>
                 </div>
                 <div className="navbar-end">
+                    {!props.isAuthenticated &&
                         <Link to="/register" className="navbar-item">Register</Link>
+                    }
+                    { !props.isAuthenticated &&
                         <Link to="/login" className="navbar-item">Login</Link>
+                    }
+                    { props.isAuthenticated &&
                         <Link to="/logout" className="navbar-item">Logout</Link>
+                    }
                 </div>
             </div>
         </section>

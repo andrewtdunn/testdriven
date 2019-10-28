@@ -3,11 +3,11 @@ import axios from 'axios';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import UsersList from './components/UsersList';
-import AddUser from './components/AddUser';
 import About from './components/About';
 import NavBar from './components/NavBar';
 import Form from './components/Form';
 import Logout from "./components/Logout";
+import UserStatus from "./components/UserStatus";
 
 class App extends Component {
     constructor(){
@@ -93,7 +93,10 @@ class App extends Component {
         return (
             <div>
                 <BrowserRouter>
-                    <NavBar title={this.state.title} />
+                    <NavBar
+                        title={this.state.title}
+                        isAuthenticated={this.state.isAuthenticated}
+                    />
                     <section className="section">
                         <div className="container">
                             <div className="columns">
@@ -102,15 +105,6 @@ class App extends Component {
                                     <Switch>
                                         <Route exact path='/' render={() => (
                                           <div>
-                                            <h1 className="title is-1">All Users</h1>
-                                            <hr/><br/>
-                                            <AddUser
-                                              username={this.state.username}
-                                              email={this.state.email}
-                                              addUser={this.addUser}
-                                              handleChange={this.handleChange}
-                                            />
-                                            <br/><br/>
                                             <UsersList users={this.state.users}/>
                                           </div>
                                         )} />
@@ -139,6 +133,13 @@ class App extends Component {
                                                 isAuthenticated={this.state.isAuthenticatedds}
                                             />
                                         )}/>
+                                        <Route exact path='/status' render={() => (
+                                            <UserStatus
+                                                isAuthenticated={this.state.isAuthenticated}
+                                            />
+                                        )}
+
+                                        />
                                     </Switch>
                                 </div>
                             </div>
