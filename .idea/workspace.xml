@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0e7f609-af96-41b7-88c0-e93b87459bdf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+            <state relative-caret-position="373">
+              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -162,17 +161,17 @@
         <option value="$PROJECT_DIR$/services/nginx/prod.conf" />
         <option value="$PROJECT_DIR$/cypress.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/docker-compose-prod.yml" />
+        <option value="$PROJECT_DIR$/test.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1411" />
-    <option name="y" value="64" />
-    <option name="width" value="1099" />
-    <option name="height" value="1266" />
+    <option name="x" value="115" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -260,18 +259,18 @@
       <workItem from="1571676477467" duration="340000" />
       <workItem from="1571978873643" duration="5368000" />
       <workItem from="1572013622211" duration="30776000" />
-      <workItem from="1572204787449" duration="33392000" />
+      <workItem from="1572204787449" duration="33948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213658000" />
+    <option name="totallyTimeSpent" value="214214000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1411" y="64" width="1099" height="1266" extended-state="0" />
+    <frame x="115" y="23" width="1440" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49912435" visible="true" weight="0.24124882" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49912435" visible="true" weight="0.18240343" />
       <window_info id="Structure" order="1" sideWeight="0.50087565" side_tool="true" weight="0.18658641" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -285,7 +284,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294539" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.44804087" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.08835341" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -723,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+        <state relative-caret-position="373">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
         </state>
       </provider>
     </entry>
