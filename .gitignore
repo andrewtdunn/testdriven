@@ -1,5 +1,6 @@
 __pycache__
 env
+node_modules
 services/users/htmlcov
-.idea/
+.idea
 .gitignore
