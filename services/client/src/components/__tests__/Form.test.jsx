@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, configure } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Form from '../Form';
+import Form from '../forms/Form';
 
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
@@ -22,8 +22,7 @@ const testData = [
             email: '',
             password: ''
         },
-        handleUserFormSubmit: jest.fn(),
-        handleFormChange: jest.fn(),
+        loginUser: jest.fn(),
         isAuthenticated: false,
     },
     {
@@ -33,8 +32,7 @@ const testData = [
             email: '',
             password: ''
         },
-        handleUserFormSubmit: jest.fn(),
-        handleFormChange: jest.fn(),
+        loginUser: jest.fn(),
         isAuthenticated: false,
     }
 ];
@@ -55,19 +53,28 @@ describe('When not authenticated', () => {
 
         it(`${el.formType} Form submits the form properly`, () => {
             const wrapper = shallow(component);
+            wrapper.instance().handleUserFormSubmit = jest.fn();
+            wrapper.instance().validateForm = jest.fn();
+            wrapper.update();
             const input = wrapper.find('input[type="email"]');
-            expect(el.handleUserFormSubmit).toHaveBeenCalledTimes(0);
-            expect(el.handleFormChange).toHaveBeenCalledTimes(0);
-            input.simulate('change');
-            expect(el.handleFormChange).toHaveBeenCalledTimes(1);
+            expect(wrapper.instance().handleUserFormSubmit).toHaveBeenCalledTimes(0);
+            input.simulate(
+                'change', { target: { name: 'email', value: 'test@test.com'}});
             wrapper.find('form').simulate('submit', el.formData);
-            expect(el.handleUserFormSubmit).toHaveBeenCalledWith(el.formData);
-            expect(el.handleUserFormSubmit).toHaveBeenCalledTimes(1);
+            expect(wrapper.instance().handleUserFormSubmit).toHaveBeenCalledWith(el.formData);
+            expect(wrapper.instance().handleUserFormSubmit).toHaveBeenCalledTimes(1);
+            expect(wrapper.instance().validateForm).toHaveBeenCalledTimes(1);
         });
 
         it(`${el.formType} Form renders a snapshot properly`, () => {
             const tree = renderer.create(component).toJSON();
             expect(tree).toMatchSnapshot();
+        });
+
+        it(`${el.formType} Form should be disabled by default`, () => {
+            const wrapper = shallow(component);
+            const input = wrapper.find('input[type="submit"]');
+            expect(input.get(0).props.disabled).toEqual(true);
         });
     })
 });
