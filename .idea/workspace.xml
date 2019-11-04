@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0e7f609-af96-41b7-88c0-e93b87459bdf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/nginx/dev.conf" beforeDir="false" afterPath="$PROJECT_DIR$/services/nginx/dev.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/nginx/prod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/services/nginx/prod.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose-prod.yml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+            <state relative-caret-position="300">
+              <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/users/Dockerfile-prod">
+        <entry file="file://$PROJECT_DIR$/cypress.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="20">
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -78,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/swagger/swagger.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+            <state relative-caret-position="391">
+              <caret line="149" column="7" lean-forward="true" selection-start-line="149" selection-start-column="7" selection-end-line="149" selection-end-column="7" />
               <folding>
                 <element signature="n#!!block;n#/users/ping#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#get#0;n#!!block;n#/users#0;n#!!block;n#paths#0;n#!!top" />
@@ -98,17 +96,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="982">
               <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/client/Dockerfile-prod">
+        <entry file="file://$PROJECT_DIR$/test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="1780">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -187,8 +185,6 @@
         <option value="$PROJECT_DIR$/services/client/src/components/forms/Form.jsx" />
         <option value="$PROJECT_DIR$/services/client/package.json" />
         <option value="$PROJECT_DIR$/test.sh" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/cypress.json" />
         <option value="$PROJECT_DIR$/services/users/project/config.py" />
         <option value="$PROJECT_DIR$/docker-compose-prod.yml" />
         <option value="$PROJECT_DIR$/services/swagger/nginx.conf" />
@@ -198,6 +194,8 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/services/swagger/Dockerfile" />
         <option value="$PROJECT_DIR$/services/swagger/swagger.json" />
+        <option value="$PROJECT_DIR$/cypress.json" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -312,12 +310,12 @@
       <workItem from="1572641895300" duration="19891000" />
       <workItem from="1572723075845" duration="12862000" />
       <workItem from="1572799860975" duration="21679000" />
-      <workItem from="1572881550628" duration="4602000" />
+      <workItem from="1572881550628" duration="4774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321408000" />
+    <option name="totallyTimeSpent" value="321580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="944" y="23" width="1337" height="1129" extended-state="0" />
@@ -629,28 +627,7 @@
     <entry file="file://$PROJECT_DIR$/services/client/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cypress.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/users/project/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -700,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/swagger/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -723,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/swagger/swagger.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+        <state relative-caret-position="391">
+          <caret line="149" column="7" lean-forward="true" selection-start-line="149" selection-start-column="7" selection-end-line="149" selection-end-column="7" />
           <folding>
             <element signature="n#!!block;n#/users/ping#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#get#0;n#!!block;n#/users#0;n#!!block;n#paths#0;n#!!top" />
@@ -733,6 +703,34 @@
             <element signature="n#!!block;n#auth/login#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/auth/status#0;n#!!block;n#paths#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1780">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="982">
+          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
         </state>
       </provider>
     </entry>
