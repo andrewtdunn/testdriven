@@ -51,6 +51,20 @@ all() {
     e2e
 }
 
+# run all tests for CI
+ci() {
+    docker-compose up -d --build
+    docker-compose exec users python manage.py test
+    inspect $? users
+    docker-compose exec users flake8 project
+    inspect $? users-lint
+    docker-compose exec client npm run coverage
+    inspect $? client
+    docker-compse down
+    e2e
+}
+
+
 # run appropriate tests
 if [[ "${type}" == "server" ]]; then
     echo "\n"
@@ -64,6 +78,10 @@ elif [[ "${type}" == "e2e" ]]; then
     echo "\n"
     echo "Running e2e tests!\n"
     e2e
+elif [[ "${type}" == "stage" ]]; then
+    echo "\n"
+    echo "Running all tests for ci!\n"
+    ci
 else
     echo "\n"
     echo "Running all tests!\n"
