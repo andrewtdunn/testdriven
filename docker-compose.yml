@@ -52,6 +52,7 @@ services:
     environment:
       - NODE_ENV=development
       - REACT_APP_USERS_SERVICE_URL=${REACT_APP_USERS_SERVICE_URL}
+      - NODE_OPTIONS=
     depends_on:
       - users
 
