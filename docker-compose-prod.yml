@@ -9,15 +9,15 @@ services:
     environment:
       - FLASK_ENV=production
       - APP_SETTINGS=project.config.DevelopmentConfig
-      - DATABASE_URL=postgres://postgres:postgres@users-db:5432/users_dev  # new
-      - DATABASE_TEST_URL=postgres://postgres:postgres@users-db:5432/users_test  # new
+      - DATABASE_URL=postgres://postgres:postgres@users-db:5432/users_prod
+      - DATABASE_TEST_URL=postgres://postgres:postgres@users-db:5432/users_test
       - SECRET_KEY=${SECRET_KEY}
-    depends_on:  # new
+    depends_on:
       - users-db
     expose:
       - 5000
 
-  users-db:  # new
+  users-db:
     build:
       context: ./services/users/project/db
       dockerfile: Dockerfile
