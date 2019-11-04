@@ -17,7 +17,7 @@ before_script:
   - docker-compose up -d --build
 
 script:
-  - bash test.sh stage
+  - bash test.sh staged
 
 after_script:
   - docker-compose down
