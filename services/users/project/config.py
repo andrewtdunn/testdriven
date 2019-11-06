@@ -1,3 +1,6 @@
+# services/users/project/config.py
+
+
 import os
 
 
@@ -15,7 +18,7 @@ class BaseConfig:
 
 
 class DevelopmentConfig(BaseConfig):
-    """Development Configuration"""
+    """Development configuration"""
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     DEBUG_TB_ENABLED = True
     BCRYPT_LOG_ROUNDS = 4
@@ -30,7 +33,11 @@ class TestingConfig(BaseConfig):
     TOKEN_EXPIRATION_SECONDS = 3
 
 
+class StagingConfig(BaseConfig):
+    """Staging configuration"""
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+
+
 class ProductionConfig(BaseConfig):
     """Production configuration"""
-    DEBUG = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
