@@ -49,7 +49,7 @@ before_script:
   - unset NODE_OPTIONS
 
 script:
-  - bash test.sh stage
+  - bash test-ci.sh $TRAVIS_BRANCH
 
 after_script:
   - docker-compose down
