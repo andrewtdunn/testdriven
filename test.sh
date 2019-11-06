@@ -61,7 +61,6 @@ ci() {
     docker-compose exec client npm run coverage
     inspect $? client
     docker-compse down
-    unset NODE_OPTIONS
     e2e
 }
 
