@@ -1,7 +1,27 @@
 sudo: required
 
+language: node_js
+
+node_js:
+  - 10
+
 services:
   - docker
+
+addons:
+
+  apt:
+
+    packages:
+
+      - libgconf-2-4
+
+cache:
+
+  npm: true
+  directories:
+
+    - ~/.cache
 
 env:
   DOCKER_COMPOSE_VERSION: 1.23.2
