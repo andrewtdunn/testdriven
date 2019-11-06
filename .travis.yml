@@ -16,13 +16,6 @@ addons:
 
       - libgconf-2-4
 
-cache:
-
-  npm: true
-  directories:
-
-    - ~/.cache
-
 env:
   DOCKER_COMPOSE_VERSION: 1.23.2
   COMMIT: ${TRAVIS_COMMIT::8}
