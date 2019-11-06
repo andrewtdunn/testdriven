@@ -1,11 +1,15 @@
 #!/bin/sh
 
+
+echo "TRAVIS_PULL_REQUEST"
+echo $TRAVIS_PULL_REQUEST
 if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == false ]
 then
 
     if [ "$TRAVIS_BRANCH" == "staging" ] || \
        [ "$TRAVIS_BRANCH" == "production" ]
     then
+        echo "fixing env vars"
         curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
         unzip awscli-bundle.zip
         ./awscli-bundle/install -b ~/bin/aws
@@ -14,11 +18,13 @@ then
         eval $(aws ecr get-login --region us-west-1 --no-include-email)
         export TAG=$TRAVIS_BRANCH
         export REPO=$AWS_ACCOUNT_ID.dkr.ecr.us-west-1.amazonaws.com
+        echo "finished env vars"
     fi
 
     if [ "$TRAVIS_BRANCH" == "staging" ] || \
        [ "$TRAVIS_BRANCH" == "production" ]
     then
+        echo "build tag and push"
         # users
         docker build $USERS_REPO -t $USERS:$COMMIT -f Dockerfile-prod
         docker tag $USERS:$COMMIT $REPO/$USERS:$TAG
@@ -35,5 +41,6 @@ then
         docker build $SWAGGER_REPO -t $SWAGGER:$COMMIT -f Dockerfile-prod
         docker tag $SWAGGER:$COMMIT $REPO/$SWAGGER:$TAG
         docker push $REPO/$SWAGGER:$TAG
+        echo "finish build tag and push"
     fi
 fi
