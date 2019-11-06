@@ -3,27 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0e7f609-af96-41b7-88c0-e93b87459bdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/index.spec.js/Index -- should display the page correctly if a user is not logged in (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/index.spec.js/Index -- should display the page correctly if a user is not logged in (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/index.spec.js/Index -- users should be able to visit the about page (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/index.spec.js/Index -- users should be able to visit the about page (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Login -- should allow a  user to sign in (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Login -- should allow a  user to sign in (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Login -- should display the sign in form (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Login -- should display the sign in form (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Login -- should throw an error if the credentials are incorrect (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Login -- should throw an error if the credentials are incorrect (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/message.spec.js/Message -- should display flash messages correctly (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/message.spec.js/Message -- should display flash messages correctly (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- it should throw an error if the credentials are incorrect (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- it should throw an error if the credentials are incorrect (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should allow a user to register (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should allow a user to register (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should display the registration form (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should display the registration form (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should throw an error if the email is taken (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should throw an error if the email is taken (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should throw an error if the username is taken (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should throw an error if the username is taken (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should validate the password field (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/register.spec.js/Register -- should validate the password field (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/status.spec.js/Status -- should display user info if a user is logged in (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/status.spec.js/Status -- should display user info if a user is logged in (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/screenshots/status.spec.js/Status -- should not display user info if a user is not logged in (failed).png" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/screenshots/status.spec.js/Status -- should not display user info if a user is not logged in (failed).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/swagger/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/services/swagger/swagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/project/db/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/project/db/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,11 +58,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose-prod.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="520">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -98,28 +95,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose-stage.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/users/project/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" lean-forward="true" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/swagger/Dockerfile-stage">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -207,10 +186,10 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/cypress.json" />
         <option value="$PROJECT_DIR$/docker-compose-stage.yml" />
-        <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/services/users/project/config.py" />
         <option value="$PROJECT_DIR$/services/swagger/Dockerfile-prod" />
         <option value="$PROJECT_DIR$/docker-compose-prod.yml" />
+        <option value="$PROJECT_DIR$/test.sh" />
       </list>
     </option>
   </component>
@@ -339,17 +318,18 @@
       <workItem from="1572723075845" duration="12862000" />
       <workItem from="1572799860975" duration="21679000" />
       <workItem from="1572881550628" duration="17123000" />
-      <workItem from="1572983963137" duration="8207000" />
+      <workItem from="1572983963137" duration="8782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342136000" />
+    <option name="totallyTimeSpent" value="342711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1098" y="38" width="1161" height="1129" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49912435" visible="true" weight="0.2403932" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49912435" visible="true" weight="0.2403932" />
       <window_info id="Structure" order="1" sideWeight="0.50087565" side_tool="true" weight="0.18658641" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -363,7 +343,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294539" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33751205" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33751205" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -649,22 +629,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/users/entrypoint.sh">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/users/project/db/create.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -697,14 +663,14 @@
     <entry file="file://$PROJECT_DIR$/docker-compose-stage.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/users/project/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" lean-forward="true" selection-end-line="43" />
+          <caret line="2" selection-end-line="43" />
         </state>
       </provider>
     </entry>
@@ -718,7 +684,7 @@
     <entry file="file://$PROJECT_DIR$/services/swagger/Dockerfile-stage">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -757,10 +723,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose-prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="520">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
         </state>
       </provider>
     </entry>
