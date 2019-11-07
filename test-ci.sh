@@ -6,7 +6,7 @@ fails=""
 inspect() {
     if [ $1 -ne 0 ]; then
         fails="${fails} $2"
-    if
+    fi
 }
 
 # run client and server-side tests
