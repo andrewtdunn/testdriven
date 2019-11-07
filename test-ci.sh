@@ -11,7 +11,7 @@ inspect() {
 
 # run client and server-side tests
 dev(){
-    docker-compose -d --build
+    docker-compose up -d --build
     docker-compose exec users python manage.py test
     inspect $? users
     docker-compose exec users flake8 project
