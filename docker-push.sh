@@ -7,7 +7,6 @@
 if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]
 then
 
-<<<<<<< HEAD
   if [[ "$TRAVIS_BRANCH" == "staging" ]]; then
     export DOCKER_ENV=stage
     export REACT_APP_USERS_SERVICE_URL="test-driven-staging-alb-656138088.us-east-1.elb.amazonaws.com"
@@ -15,15 +14,6 @@ then
     export DOCKER_ENV=prod
   fi
 
-||||||| merged common ancestors
-=======
-  if [[ "$TRAVIS_BRANCH" == "staging" ]]; then
-    export DOCKER_ENV=stage
-  elif [[ "$TRAVIS_BRANCH" == "production" ]]; then
-    export DOCKER_ENV=prod
-  fi
-
->>>>>>> ac2e0d575d1739ad5f48d3518df87733c8a400f8
   if [ "$TRAVIS_BRANCH" == "staging" ] || \
      [ "$TRAVIS_BRANCH" == "production" ]
   then
