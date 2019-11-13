@@ -63,9 +63,6 @@
           "value": "postgres"
         }
       ],
-      "links": [
-        "users-db"
-      ],
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
