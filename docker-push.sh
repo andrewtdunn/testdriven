@@ -1,15 +1,11 @@
 #!/bin/sh
 
-
-
-
-
 if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]
 then
 
   if [[ "$TRAVIS_BRANCH" == "staging" ]]; then
     export DOCKER_ENV=stage
-    export REACT_APP_USERS_SERVICE_URL="test-driven-staging-alb-656138088.us-east-1.elb.amazonaws.com"
+    export REACT_APP_USERS_SERVICE_URL="http://test-driven-staging-alb-656138088.us-east-1.elb.amazonaws.com"
   elif [[ "$TRAVIS_BRANCH" == "production" ]]; then
     export DOCKER_ENV=prod
   fi
