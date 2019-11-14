@@ -8,8 +8,4 @@ done
 
 echo "PostgreSQL started"
 
-echo "Recreate DB"
-python manage.py recreate_db
-echo "Seed DB"
-python manage.py seed_db
 python manage.py run -h 0.0.0.0
