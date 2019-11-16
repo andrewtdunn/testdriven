@@ -6,7 +6,7 @@ then
     if [ "$TRAVIS_BRANCH" == "production" ]
     then
 
-        JQ = "jq --raw-output --exit-status"
+        JQ="jq --raw-output --exit-status"
 
         configure_aws_cli() {
             aws --version
