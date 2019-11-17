@@ -16,7 +16,7 @@ then
         }
 
         register_definition() {
-            if revision=$(aws ecs register-task-definition --cli-input-json "$task_def" | $JQ '.taskDefinition.taskDefinitionArn') ; then
+            if revision=$(aws ecs register-task-definigit tion --cli-input-json "$task_def" | $JQ '.taskDefinition.taskDefinitionArn') ; then
                 echo "Revision: $revision"
             else
                 echo "Failed to register task definition"
