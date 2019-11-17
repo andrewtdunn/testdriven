@@ -46,5 +46,8 @@ then
             echo "$task_def"
             register_definition
         }
+
+        configure_aws_cli
+        deploy_cluster
     fi
 fi
