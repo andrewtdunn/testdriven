@@ -12,21 +12,9 @@ services:
       - DATABASE_URL=postgres://postgres:postgres@users-db:5432/users_prod
       - DATABASE_TEST_URL=postgres://postgres:postgres@users-db:5432/users_test
       # - SECRET_KEY=${SECRET_KEY}
-      - SECRET_KEY=cauliflower
-    depends_on:
-      - users-db
+      - SECRET_KEY=my_precious
     expose:
       - 5000
-
-  users-db:
-    build:
-      context: ./services/users/project/db
-      dockerfile: Dockerfile
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    expose:
-      - 5432
 
   swagger:
     build:
