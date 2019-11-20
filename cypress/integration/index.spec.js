@@ -8,6 +8,7 @@ describe('Index', () => {
             .get('a').contains('Register')
             .get('a').contains('Log In')
             .get('a').contains('Swagger')
+            .get('span').contains('Copyright 2019 TestDriven.io')
             .get('.notification.is-success').should('not.be.visible');
     });
     it('users should be able to visit the "/about" page', () => {
