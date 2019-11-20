@@ -5,3 +5,5 @@ services/users/htmlcov
 .idea/
 .idea
 .gitignore
+
+cypress/screenshots
