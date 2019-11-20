@@ -47,24 +47,34 @@ exports[`NavBar renders a snapshot properly 1`] = `
         >
           About
         </a>
+        <a
+          href="/swagger"
+        >
+          Swagger
+        </a>
       </div>
       <div
         className="navbar-end"
       >
-        <a
-          className="navbar-item"
-          href="/register"
-          onClick={[Function]}
+        <div
+          className="navbar-end"
         >
-          Register
-        </a>
-        <a
-          className="navbar-item"
-          href="/login"
-          onClick={[Function]}
-        >
-          Log In
-        </a>
+          <a
+            className="navbar-item"
+            href="/register"
+            onClick={[Function]}
+          >
+            Register
+          </a>
+           
+          <a
+            className="navbar-item"
+            href="/login"
+            onClick={[Function]}
+          >
+            Log In
+          </a>
+        </div>
       </div>
     </div>
   </section>
