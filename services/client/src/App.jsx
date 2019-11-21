@@ -10,6 +10,7 @@ import Logout from "./components/Logout";
 import UserStatus from "./components/UserStatus";
 import Message from "./components/Message";
 import Footer from './components/Footer';
+import Exercises from "./components/Exercises";
 
 class App extends Component {
     constructor(){
@@ -87,7 +88,9 @@ class App extends Component {
                                     <br/>
                                     <Switch>
                                         <Route exact path='/' render={() => (
-                                            <p>Something</p>
+                                            <Exercises
+                                                isAuthenticated={this.state.isAuthenticated}
+                                            />
                                         )} />
                                         <Route exact path='/about' component={About}/>
                                         <Route exact path='/register' render={() => (
