@@ -18,5 +18,5 @@ class Exercise(db.Model):
             'id': self.id,
             'body': self.body,
             'test_code': self.test_code,
-            'test_code_solution': test_code_solution
+            'test_code_solution': self.test_code_solution
         }
