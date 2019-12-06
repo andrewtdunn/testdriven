@@ -28,7 +28,7 @@ describe('Register', () => {
 
         // assert user is redirected to '/'
         cy.get('.notification.is-success').contains('Welcome!');
-        cy.get('navbar-burger').click();
+        cy.get('.navbar-burger').click();
         cy.contains('Users').click();
         // assert '/all-users' is displayed properly
         cy.get('.navbar-burger').click();

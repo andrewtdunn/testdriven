@@ -64,7 +64,6 @@ class App extends Component {
             messageName: null,
             messageType: null
         });
-        console.log("state", this.state);
     };
     render() {
         return (

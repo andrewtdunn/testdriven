@@ -26,6 +26,7 @@ describe('Index', () => {
 
         // register user
         cy
+            .visit('/register')
             .get('input[name="username"]').type(username)
             .get('input[name="email"]').type(email)
             .get('input[name="password"]').type(password)
@@ -37,7 +38,7 @@ describe('Index', () => {
             .get('h1').contains('Exercises')
             .get('.navbar-burger').click()
             .get('a').contains('User Status')
-            .get('a').contains('Log gout')
+            .get('a').contains('Log Out')
             .get('a').contains('Register').should('not.be.visible')
             .get('a').contains('Log In').should('not.be.visible')
             .get('a').contains('Swagger')
