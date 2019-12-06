@@ -44,7 +44,7 @@
       "memoryReservation": 300,
       "portMappings": [
         {
-          "hostPost": 0,
+          "hostPort": 0,
           "protocol": "tcp",
           "containerPort": 5432
         }
