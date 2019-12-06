@@ -53,17 +53,6 @@ services:
     depends_on:
       - users
 
-  nginx:
-    build:
-      context: ./services/nginx
-      dockerfile: Dockerfile-stage
-    restart: always
-    ports:
-      - 80:80
-    depends_on:
-      - users
-      - client
-
   exercises:
     build:
       context: ./services/exercises
@@ -88,3 +77,14 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+
+  nginx:
+    build:
+      context: ./services/nginx
+      dockerfile: Dockerfile-stage
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - users
+      - client
