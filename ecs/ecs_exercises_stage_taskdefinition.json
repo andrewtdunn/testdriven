@@ -63,7 +63,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "testdriven-exercises_db-stage",
-          "aws-region": "us-east-1"
+          "awslogs-region": "us-east-1"
         }
       }
     }
