@@ -50,6 +50,7 @@ def cov():
         return 0
     sys.exit(result)
 
+
 @cli.command('seed_db')
 def seed_db():
     """Seeds the database."""
@@ -73,7 +74,6 @@ def seed_db():
         test_code_solution='120'
     ))
     db.session.commit()
-
 
 
 @cli.command('recreate_db')
