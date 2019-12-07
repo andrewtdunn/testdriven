@@ -72,5 +72,4 @@ class ExerciseList(Resource):
             return response_object, 400
 
 
-
 api.add_resource(ExerciseList, '/exercises')
