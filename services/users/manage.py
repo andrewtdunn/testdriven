@@ -54,7 +54,7 @@ def cov():
         COV.stop()
         COV.save()
         print('Coverage Summary:')
-        COV.report()
+        print('-----------------')
         COV.html_report()
         COV.erase()
         return 0
