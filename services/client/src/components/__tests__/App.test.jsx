@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow, configure, mount } from 'enzyme';
 import { MemoryRouter as Router } from 'react-router-dom';
+import AceEditor from 'react-ace';
+jest.mock('react-ace');
 
 import App from '../../App';
 
@@ -20,6 +22,7 @@ test('App renders without crashing', () => {
 test('App will call componentDidMount when mounted', () => {
     const onDidMount = jest.fn();
     App.prototype.componentDidMount = onDidMount;
+    App.prototype.AceEditor = jest.fn();
     const wrapper = mount(<Router><App/></Router>);
     expect(onDidMount).toHaveBeenCalledTimes(1);
 });
