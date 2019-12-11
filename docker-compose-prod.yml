@@ -13,8 +13,21 @@ services:
       - DATABASE_TEST_URL=postgres://postgres:postgres@users-db:5432/users_test
       # - SECRET_KEY=${SECRET_KEY}
       - SECRET_KEY=my_precious
+    depends_on:
+      - users-db
     expose:
       - 5000
+
+  users-db:
+    build:
+      context: ./services/users/project/db
+      dockerfile: Dockerfile
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWOR=postgres
+
 
   swagger:
     build:
@@ -53,3 +66,27 @@ services:
     depends_on:
       - users
 
+  exercises:
+    build:
+      context: ./services/exercises
+      dockerfile: Dockerfile-prod
+    expose:
+      - 5000
+    environment:
+      - FLASK_ENV=production
+      - APP_SETTINGS=project.config.StagingConfig
+      - DATABASE_URL=postgres://postgres:postgres@excercises-db:5432/exercises_prod
+      - DATABASE_TEST_URL=postgres://postgres:postgres@exercises-db:5432/exercises_test
+    depends_on:
+      - users
+      - exercises-db
+
+  exercises-db:
+    build:
+      context: ./services/exercises/project/db
+      dockerfile: Dockerfile
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres

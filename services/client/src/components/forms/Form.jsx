@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 import { registerFormRules, loginFormRules } from './form-rules.js';
 import FormErrors from './FormErrors';
 
@@ -192,5 +193,11 @@ class Form extends Component {
     };
 }
 
+Form.propTypes = {
+    formType: PropTypes.string.isRequired,
+    isAuthenticated: PropTypes.bool.isRequired,
+    loginUser: PropTypes.func.isRequired,
+    createMessage: PropTypes.func.isRequired
+}
 
 export default Form;

@@ -7,6 +7,11 @@ configure({ adapter: new Adapter() });
 
 import AddUser from '../AddUser';
 
+beforeEach(() => {
+    console.error = jest.fn();
+    console.error.mockClear();
+});
+
 test('AddUser renders properly', () => {
    const wrapper = shallow(<AddUser/>);
    const element = wrapper.find('form');
