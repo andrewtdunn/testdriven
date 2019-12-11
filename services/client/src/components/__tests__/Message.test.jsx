@@ -7,6 +7,11 @@ import Message from '../Message';
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
+beforeEach(() => {
+    console.error = jest.fn();
+    console.error.mockClear();
+});
+
 describe('When given a success message', () => {
     const removeMessage = jest.fn();
 

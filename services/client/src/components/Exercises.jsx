@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AceEditor from 'react-ace';
+import PropTypes from 'prop-types';
 import 'brace/mode/python';
 import 'brace/theme/solarized_dark';
 import axios from 'axios';
@@ -93,6 +94,10 @@ class Exercises extends Component {
             </div>
         )
     };
+}
+
+Exercises.propTypes = {
+    isAuthenticated: PropTypes.bool.isRequired,
 }
 
 export default Exercises;
