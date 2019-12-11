@@ -24,6 +24,11 @@ const users = [
     }
 ];
 
+beforeEach(() => {
+    console.error = jest.fn();
+    console.error.mockClear();
+});
+
 
 test('UsersList renders properly', () => {
     const wrapper = shallow(<UsersList users={users}/>);
