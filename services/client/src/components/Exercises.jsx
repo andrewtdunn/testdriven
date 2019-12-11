@@ -35,18 +35,21 @@ class Exercises extends Component {
         this.setState(newState);
     };
 
-    submitExercise(event) {
+    submitExercise(event, id) {
         event.preventDefault();
-        console.log(this.state.editor.value);
         const newState = this.state.editor;
+        const exercise = this.state.exercises.filter(el => el.id === id)[0];
         newState.showGrading = true;
         newState.showCorrect = false;
         newState.showIncorrect = false;
         newState.button.isDisabled = true;
         this.setState(newState);
-        const data = { answer: this.state.editor.value };
+        const data = {
+            answer: this.state.editor.value,
+            test: exercise.test_code,
+            solution: exercise.test_code_solution
+        };
         const url = process.env.REACT_APP_API_GATEWAY_URL;
-        console.log("url", url);
         axios.post(url, data)
             .then((res) => {
                 newState.showGrading = false;

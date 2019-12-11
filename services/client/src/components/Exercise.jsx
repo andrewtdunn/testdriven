@@ -30,7 +30,7 @@ const Exercise = (props) => {
                 <div>
                     <button
                         className="button is-primary"
-                        onClick={props.submitExercise}
+                        onClick={(evt) => props.submitExercise(evt, props.exercise.id)}
                         disabled={props.editor.button.isDisabled}
                     >Run Code</button>
                     {props.editor.showGrading &&
@@ -46,7 +46,7 @@ const Exercise = (props) => {
                             <span className="icon is-large">
                               <i className="fas fa-check"></i>
                             </span>
-                            <span className="grade-text">Correct</span>
+                            <span className="grade-text">Correct!</span>
                         </h5>
                     }
                     {props.editor.showIncorrect &&
@@ -56,7 +56,7 @@ const Exercise = (props) => {
                             </span>
                             <span className="grade-text">Incorrect!</span>
                         </h5>
-                    }u
+                    }
                 </div>
             }
             <br/><br/>

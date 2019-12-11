@@ -48,6 +48,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
 
 before_script:
+  - export COMPOSE_HTTP_TIMEOUT=600
   - export REACT_APP_USERS_SERVICE_URL=http://127.0.0.1
   - export REACT_APP_EXERCISES_SERVICE_URL=http://127.0.0.1
   - export REACT_APP_API_GATEWAY_URL=https://k5r6kpca2m.execute-api.us-east-1.amazonaws.com/v1/execute
