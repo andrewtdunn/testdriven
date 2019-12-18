@@ -55,5 +55,13 @@ then
     docker build $EXERCISES_DB_REPO -t $EXERCISES_DB:$COMMIT -f Dockerfile
     docker tag $EXERCISES_DB:$COMMIT $REPO/$EXERCISES_DB:$TAG
     docker push $REPO/$EXERCISES_DB:$TAG
+    # scores
+    docker build $SCORES_REPO -t $SCORES:$COMMIT -f Dockerfile-$DOCKER_ENV
+    docker tag $SCORES:$COMMIT $REPO/$SCORES:$TAG
+    docker push $REPO/$SCORES:$TAG
+    # scores db
+    docker build $SCORES_DB_REPO -t $SCORES_DB:$COMMIT -f Dockerfile
+    docker tag $SCORES_DB:$COMMIT $REPO/$SCORES_DB:$TAG
+    docker push $REPO/$SCORES_DB:$TAG
   fi
 fi
