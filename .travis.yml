@@ -39,6 +39,10 @@ env:
   EXERCISES_REPO: ${MAIN_REPO}#${TRAVIS_BRANCH}:services/exercises
   EXERCISES_DB: test-driven-exercises_db
   EXERCISES_DB_REPO: ${MAIN_REPO}#${TRAVIS_BRANCH}:services/exercises/project/db
+  SCORES: test-driven-scores
+  SCORES_REPO: ${MAIN_REPO}#${TRAVIS_BRANCH}:services/scores
+  SCORES_DB: test-driven-scores_db
+  SCORES_DB_REPO: ${MAIN_REPO}#${TRAVIS_BRANCH}:services/scores/project/db
   SECRET_KEY: my_precious
 
 before_install:
@@ -51,6 +55,7 @@ before_script:
   - export COMPOSE_HTTP_TIMEOUT=600
   - export REACT_APP_USERS_SERVICE_URL=http://127.0.0.1
   - export REACT_APP_EXERCISES_SERVICE_URL=http://127.0.0.1
+  - export REACT_APP_SCORES_SERVICE_URL=http://127.0.0.1
   - export REACT_APP_API_GATEWAY_URL=https://k5r6kpca2m.execute-api.us-east-1.amazonaws.com/v2/execute
   - if [[ "$TRAVIS_BRANCH" == "staging" ]]; then export LOAD_BALANCER_DNS_NAME=http://test-driven-staging-alb-656138088.us-east-1.elb.amazonaws.com; fi
   - if [[ "$TRAVIS_BRANCH" == "production" ]]; then export LOAD_BALANCER_DNS_NAME=http://testdriven-production-alb-1067420407.us-east-1.elb.amazonaws.com; fi

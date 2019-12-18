@@ -68,7 +68,7 @@ def seed_db():
     ))
     db.session.add(Exercise(
         body=('Define a function called factorial that takes a random number '
-              'as an argument and then returns the factorial of that given'
+              'as an argument and then returns the factorial of that given '
               'number.'),
         test_code='factorial(5)',
         test_code_solution='120'

@@ -11,6 +11,7 @@ class Exercises extends Component {
     constructor (props) {
         super(props);
         this.state = {
+            currentExercise: 0,
             exercises: [],
             editor: {
                 value: '# Enter your code here.',
@@ -18,15 +19,29 @@ class Exercises extends Component {
                 showGrading: false,
                 showCorrect: false,
                 showIncorrect: false,
+            },
+            showButtons: {
+                prev: false,
+                next: false
             }
         };
         this.onChange = this.onChange.bind(this);
         this.submitExercise = this.submitExercise.bind(this);
+        this.updateScore = this.updateScore.bind(this);
+        this.renderButtons = this.renderButtons.bind(this);
+        this.nextExercise = this.nextExercise.bind(this);
+        this.prevExercise = this.prevExercise.bind(this);
+        this.resetEditor = this.resetEditor.bind(this);
     };
 
     getExercises() {
         axios.get(`${process.env.REACT_APP_EXERCISES_SERVICE_URL}/exercises`)
-        .then((res) => { this.setState({ exercises: res.data.data.exercises }); })
+        .then((res) => { this.setState({
+                exercises: res.data.data.exercises,
+                currentExercises: 0
+            });
+            this.renderButtons();
+        })
         .catch((err) => { console.log(err); });
     };
 
@@ -55,8 +70,14 @@ class Exercises extends Component {
             .then((res) => {
                 newState.showGrading = false;
                 newState.button.isDisabled = false;
-                if (res.data) { newState.showCorrect = true};
-                if (!res.data) { newState.showIncorrect = true};
+                if (res.data && !res.data.errorType) {
+                    newState.showCorrect = true
+                    this.updateScore(exercise.id, true)
+                }
+                if (!res.data || res.data.errorType) {
+                    newState.showIncorrect = true
+                    this.updateScore(exercise.id, false)
+                }
                 this.setState(newState);
             })
             .catch((err) => {
@@ -71,6 +92,73 @@ class Exercises extends Component {
         this.getExercises();
     };
 
+    renderButtons() {
+        const index = this.state.currentExercise;
+        let nextButton = false;
+        let prevButton = false;
+        if (typeof this.state.exercises[index + 1] !== 'undefined'){
+            nextButton = true;
+        }
+        if (typeof this.state.exercises[index - 1] !== 'undefined'){
+            prevButton = true;
+        }
+        this.setState({
+            showButtons: {
+                next: nextButton,
+                prev: prevButton
+            }
+        });
+    };
+
+    resetEditor() {
+        const editor = {
+            value: '# Enter your code here.',
+            button: {
+                isDisabled: false,
+            },
+            showGrading: false,
+            showCorrect: false,
+            showIncorrect: false,
+        };
+        this.setState({editor: editor})
+    }
+
+    updateScore(exerciseID, bool) {
+        const options = {
+            url: `${process.env.REACT_APP_SCORES_SERVICE_URL}/scores/${exerciseID}`,
+            method: 'put',
+            headers: {
+                'Content-type': 'application/json',
+                Authorization: `Bearer ${window.localStorage.authToken}`
+            },
+            data: {correct: bool}
+        };
+        return axios(options)
+            .then((res)=> {console.log(res); })
+            .catch((error) => {console.log(error); });
+    }
+
+    nextExercise(){
+        if(this.state.showButtons.next) {
+            const currentExercise = this.state.currentExercise;
+            this.setState({currentExercise: currentExercise + 1}, () =>{
+                this.resetEditor();
+                this.renderButtons();
+            });
+        }
+    };
+
+    prevExercise(){
+        if(this.state.showButtons.prev) {
+            const currentExercise = this.state.currentExercise;
+            this.setState({currentExercise: currentExercise - 1}, () =>{
+                this.resetEditor();
+                this.renderButtons();
+            });
+        }
+    };
+
+
     render() {
         return (
             <div>
@@ -84,13 +172,30 @@ class Exercises extends Component {
                 }
                 {this.state.exercises.length  > 0 &&
                     <Exercise
-                        exercise={this.state.exercises[0]}
+                        exercise={this.state.exercises[this.state.currentExercise]}
                         editor={this.state.editor}
                         isAuthenticated={this.props.isAuthenticated}
                         onChange={this.onChange}
                         submitExercise={this.submitExercise}
                     />
                 }
+                <div className="field is-grouped">
+                    {
+                        this.state.showButtons.prev &&
+                            <button
+                                className="button is-info"
+                                onClick={() => this.prevExercise()}
+                            >&lt; Prev</button>
+                    }
+                    &nbsp;
+                    {
+                        this.state.showButtons.next &&
+                            <button
+                                className="button is-info"
+                                onClick={() => this.nextExercise()}
+                            >Next &gt;</button>
+                    }
+                </div>
             </div>
         )
     };
