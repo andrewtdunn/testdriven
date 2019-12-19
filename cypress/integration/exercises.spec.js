@@ -6,7 +6,6 @@ const password = 'greaterthanten';
 
 
 describe('Exercises', () => {
-
   it('should display the exercises correctly if a user is not logged in', () => {
     cy
       .visit('/')
@@ -43,11 +42,11 @@ describe('Exercises', () => {
       .get('button').contains('Prev').should('not.be.visible');
 
     // assert user can submit an exercise
-    for (let i = 0; i < 23; i++){
-      cy.get('textarea').type('{backspace}', { force: true})
+    for (let i = 0; i < 23; i++) {
+      cy.get('textarea').type('{backspace}', { force: true })
     }
     cy
-        .get('textarea').type('def sum(x,y):\nreturn x+y', { force: true })
+      .get('textarea').type('def sum(x,y):\nreturn x+y', { force: true })
       .get('button').contains('Run Code').click()
       .wait('@gradeExercise')
       .get('h5 > .grade-text').contains('Correct!');
@@ -74,14 +73,14 @@ describe('Exercises', () => {
       .get('button').contains('Prev')
       .get('.ace_comment').contains('# Enter your code here.')
       for (let i = 0; i < 23; i++) {
-        cy.get('textarea').type('{backspace}', {force: true})
+        cy.get('textarea').type('{backspace}', { force: true })
       }
       cy
-        .get('textarea').type('def sum(x,y):\nreturn x+y', {force: true})
+        .get('textarea').type('def sum(x,y):\nreturn x+y', { force: true })
       // click prev
       .get('button').contains('Prev').click()
       .get('button').contains('Next')
       .get('button').contains('Prev')
-      .get('.ace_comment').contains('# Enter your code here.')
+      .get('.ace_comment').contains('# Enter your code here.');
   });
 });
