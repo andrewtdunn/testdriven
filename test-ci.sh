@@ -20,7 +20,11 @@ dev(){
     inspect $? exercises
     docker-compose exec exercises flake8 project
     inspect $? exercises-lint
-    docker-compose exec client npm run coverage
+    docker-compose exec scores python manage.py test
+    inspect $? scores
+    docker-compose exec scores flake8 project
+    inspect $? scores-lint
+    docker-compose exec client npm test -- --coverage
     inspect $? client
     docker-compose down
 }
@@ -44,9 +48,6 @@ elif [[ "${env}" == "staging" ]]; then
 elif [[ "${env}" == "production" ]]; then
     echo "Running e2e tests!"
     e2e prod
-else
-    echo "Running client and server side tests!"
-    dev
 fi
 
 # return proper code
