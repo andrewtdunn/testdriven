@@ -49,7 +49,7 @@ describe('Exercises', () => {
     cy
         .get('textarea').type('def sum(x,y):\nreturn x+y', { force: true })
       .get('button').contains('Run Code').click()
-      .wait(900)
+      .wait('@gradeExercise')
       .get('h5 > .grade-text').contains('Correct!');
   });
 
